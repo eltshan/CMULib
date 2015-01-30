@@ -1,4 +1,4 @@
-package cmu.help;
+package edu.cmu.cmulib.communication.cmu.help;
 
 import java.io.Serializable;
 

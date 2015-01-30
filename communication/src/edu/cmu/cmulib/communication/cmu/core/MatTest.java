@@ -1,4 +1,4 @@
-package cmu.core;
+package edu.cmu.cmulib.communication.cmu.core;
 
 import org.junit.Test;
 

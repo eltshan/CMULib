@@ -1,4 +1,4 @@
-package cmu.core;
+package edu.cmu.cmulib.communication.cmu.core;
 
 import java.util.Arrays;
 import java.util.List;
