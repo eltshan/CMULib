@@ -2,9 +2,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import cmu.core.Mat;
 import cmu.core.MatOp;
-import cmu.decomp.svd.Master_SVD;
-import cmu.decomp.svd.Master_Spliter;
-import cmu.decomp.svd.Service.AlgorithmProtocol;
+import edu.cmu.cmulib.communication.Service.svd.Master_SVD;
+import edu.cmu.cmulib.communication.Service.svd.Master_Spliter;
 import cmu.help.Tag;
 import java.io.IOException;
 

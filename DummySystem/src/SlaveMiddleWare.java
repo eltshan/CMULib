@@ -1,4 +1,4 @@
-//import cmu.core.Mat;
+//import Mat;
 import edu.cmu.cmulib.communication.*;
 
 import java.io.IOException;

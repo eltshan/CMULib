@@ -1,22 +1,23 @@
-package cmu.decomp.svd;
+package edu.cmu.cmulib.communication.Service.svd;
 
 import cmu.core.Mat;
 import cmu.core.MatOp;
-import cmu.decomp.svd.Service.MasterAlgorithm;
+
 import cmu.help.Tag;
+import edu.cmu.cmulib.communication.Service.MasterAlgorithm;
+import edu.cmu.cmulib.communication.Service.MasterSVD;
 
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
-import java.rmi.server.UnicastRemoteObject;
 
 public class Slave_SVD implements Runnable {
 	 private Mat L;//src;          // original L and source Matrix 
 	 private Tag index;
 	 private Mat score;
-	private Registry registry;
-	 public Slave_SVD(Tag index, Mat score, Registry registry) throws RemoteException {
+	 private Registry registry;
+	 public Slave_SVD(Mat score, Registry registry) throws RemoteException {
 		 super();
 		 // 	this.src = src;
 	 	this.L = null;
@@ -38,7 +39,9 @@ public class Slave_SVD implements Runnable {
 		 this.L = MatOp.gemm(src, MatOp.gemm(src.t(), this.L));
 		 return this.L;
 	 }
-	 
+
+	public void setTag(Tag tag){ this.index = tag;}
+
     /**
      * setL
      *
@@ -64,7 +67,7 @@ public class Slave_SVD implements Runnable {
 		L = this.Slave_UpdateL(S);
 		try {
 			MasterAlgorithm masterAlgorithm = (MasterAlgorithm)registry.lookup(MasterAlgorithm.class.getCanonicalName());
-			masterAlgorithm
+			masterAlgorithm.updateL(L);
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		} catch (NotBoundException e) {

@@ -2,7 +2,6 @@ package cmu.core;
 
 import org.junit.Test;
 
-import cmu.core.Mat;
 import cmu.core.MatOp.NormType;
 
 public class MatOperationsTest {

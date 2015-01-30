@@ -1,19 +1,22 @@
-package cmu.decomp.svd.Service;
+package edu.cmu.cmulib.communication.Service;
 
 import cmu.core.Mat;
 import cmu.core.MatOp;
-import cmu.decomp.svd.Master_SVD;
-import cmu.decomp.svd.Master_Spliter;
+import edu.cmu.cmulib.communication.Service.svd.Master_SVD;
+import edu.cmu.cmulib.communication.Service.svd.Master_Spliter;
 import cmu.help.Tag;
-import edu.cmu.cmulib.communication.CommonPacket;
+
+import edu.cmu.cmulib.communication.SlaveInfo;
 
 import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
 /**
  * Created by kanghuang on 1/30/15.
  */
-public class MasterSVD extends  MasterAlgorithm {
+public class MasterSVD extends UnicastRemoteObject implements MasterAlgorithm {
     int slaveNum = 4;
     double[] test = {6,8,9,6,2,9,7,7,8,5,8,7,4,8,6,8,5,4,7,3,5,9,8,6,9,6,7,8,6,6,6,8};
     int rows = 8;
@@ -23,8 +26,10 @@ public class MasterSVD extends  MasterAlgorithm {
     Mat Like, slaveL;
     Master_SVD svd;            //rmi masterSVD共用一个Master_SVD
     Master_Spliter split;
-    public MasterSVD() throws RemoteException {
-
+    ArrayList<SlaveInfo> slaveList;
+    ArrayList<SlaveAlgorithm> algorithmList;
+    public MasterSVD(ArrayList<SlaveInfo> slaveList) throws RemoteException {
+        this.slaveList = slaveList;
     }
 
     public Mat submit(Mat score, int slaveNum) {
@@ -47,20 +52,22 @@ public class MasterSVD extends  MasterAlgorithm {
 
     public void start(){
         // compute the first eigenvector iterately
+        createAlgorithmList();
         do {
             int remain = slaveNum;
             svd.setL(Like);
             printArray(Like.data);
             // send L
             for (int i = 0; i < slaveNum; i++){
-                // SlaveAlgorithm SlaveSvd =
-                //  sendMat(Like,i,commu);
+                SlaveAlgorithm slaveAlgorithm = algorithmList.get(i);
+                slaveAlgorithm.setL(this.Like);
             }
             //send Tag
             ArrayList<Tag> index = split.split();
             for(int i = 0; i < index.size(); i++) {
                 tag = index.get(i);
-                CommonPacket packet = new CommonPacket(-1,tag);
+                SlaveAlgorithm slaveAlgorithm = algorithmList.get(i);
+                slaveAlgorithm.start(tag);
             }
 
             Like = svd.getUpdateL();
@@ -75,4 +82,16 @@ public class MasterSVD extends  MasterAlgorithm {
             System.out.print(i+" ");
         System.out.println();
     }
+
+    public void createAlgorithmList(){
+        for (SlaveInfo info : slaveList) {
+            try {
+                SlaveAlgorithm slaveAlgorithm = (SlaveAlgorithm) LocateRegistry.getRegistry(info.getAddress(), info.getPort());
+                this.algorithmList.add(slaveAlgorithm);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }

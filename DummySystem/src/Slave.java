@@ -1,11 +1,9 @@
 import cmu.core.Mat;
-import cmu.decomp.svd.Slave_SVD;
-import cmu.decomp.svd.Slave_getSplitedMatrix;
+import edu.cmu.cmulib.communication.Service.svd.Slave_SVD;
+import edu.cmu.cmulib.communication.Service.svd.Slave_getSplitedMatrix;
 import cmu.help.Tag;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.util.LinkedList;
 
@@ -147,7 +145,7 @@ public class Slave implements Runnable {
 		split.setTag(tagList.peek());
 		tagList.remove();
 		S = split.construct();
-		L = svd.Slave_UpdateL(S);
+		//L = svd.Slave_UpdateL(S);
 		printArray(L.data);
 	}
 }

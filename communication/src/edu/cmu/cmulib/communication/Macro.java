@@ -8,4 +8,5 @@ public class Macro {
     public static final int transferMatrix = 11;
     public static final int getTransferMatrixDOuble = 12;
     public static final int MASTER_RMIRegistry_PORT = 16642;
+
 }

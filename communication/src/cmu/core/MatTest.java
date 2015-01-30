@@ -1,7 +1,6 @@
 package cmu.core;
 
 import org.junit.Test;
-import cmu.core.Mat;
 
 public class MatTest {
 	/*

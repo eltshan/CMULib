@@ -1,18 +1,17 @@
 package edu.cmu.cmulib.communication;
 
-import cmu.decomp.svd.Service.AlgorithmProtocol;
+import edu.cmu.cmulib.communication.Service.AlgorithmProtocol;
 
-import cmu.decomp.svd.Service.MasterSVD;
+import edu.cmu.cmulib.communication.Service.MasterSVD;
 
 import javax.security.auth.callback.Callback;
 
 import java.net.*;
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.io.*;
 
 import static java.rmi.registry.LocateRegistry.*;
@@ -26,6 +25,7 @@ public class MasterNode {
     private final int POOL_SIZE = 5;
     public MiddleWare midd;
 
+    ArrayList<SlaveInfo> slaveList;
 
     //private SDMiddleWare middleWare;
     private Callback middleWare;
@@ -36,10 +36,11 @@ public class MasterNode {
 
     public MasterNode(MiddleWare nmidd) throws IOException {
         System.out.println("I'm a MasterNode!");
-        slaveMap = new HashMap<Integer, SlaveData>();
-        serverSocket = new ServerSocket(port);
-        executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * POOL_SIZE);
-        midd = nmidd;
+//        slaveMap = new HashMap<Integer, SlaveData>();
+//        serverSocket = new ServerSocket(port);
+//        executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * POOL_SIZE);
+//        midd = nmidd;
+        slaveList = new ArrayList<SlaveInfo>();
     }
 
 /*

@@ -1,6 +1,4 @@
-package cmu.decomp.svd.Service;
-
-import cmu.core.Mat;
+package edu.cmu.cmulib.communication.Service;
 
 import java.rmi.Remote;
 
@@ -9,4 +7,5 @@ import java.rmi.Remote;
  */
 public interface AlgorithmProtocol extends Remote{
     //public void evaluate();
+
 }

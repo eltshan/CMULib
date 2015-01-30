@@ -1,4 +1,4 @@
-package cmu.decomp.svd;
+package edu.cmu.cmulib.communication.Service.svd;
 
 import cmu.core.Mat;
 import cmu.core.MatOp;

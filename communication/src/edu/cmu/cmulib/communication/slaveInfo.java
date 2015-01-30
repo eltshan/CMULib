@@ -41,4 +41,6 @@ public class SlaveInfo {
         return "" + this.port;
     }
 
+    public int getPort(){return this.port;}
+
 }
