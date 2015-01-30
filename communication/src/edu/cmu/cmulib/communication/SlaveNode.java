@@ -22,6 +22,7 @@ public class SlaveNode {
         this.masterAddress = masterAddress;
         this.masterPort = masterPort;
         this.midd = myMidd;
+
     }
 
 

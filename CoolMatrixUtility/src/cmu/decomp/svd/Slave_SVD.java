@@ -3,15 +3,21 @@ package cmu.decomp.svd;
 import cmu.core.Mat;
 import cmu.core.MatOp;
 
-public class Slave_SVD {
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+public class Slave_SVD  {
 	 private Mat L;//src;          // original L and source Matrix 
 
-	 public Slave_SVD(Mat src){
-	// 	this.src = src;
+	 public Slave_SVD(Mat src) throws RemoteException {
+		 super();
+		 // 	this.src = src;
 	 	this.L = null;
 	 }
-	 public Slave_SVD(){
-		 
+	 public Slave_SVD() throws RemoteException {
+		 super();
+
 	 }
     /**
      * Slave_UpdateL

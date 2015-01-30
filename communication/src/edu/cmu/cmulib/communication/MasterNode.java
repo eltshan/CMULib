@@ -3,6 +3,9 @@ package edu.cmu.cmulib.communication;
 import javax.security.auth.callback.Callback;
 
 import java.net.*;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -19,7 +22,11 @@ public class MasterNode {
 
     //private SDMiddleWare middleWare;
     private Callback middleWare;
-    // contructor 
+    // contructor
+
+    private Registry registry;  // new version
+
+
     public MasterNode(MiddleWare nmidd) throws IOException {
         System.out.println("I'm a MasterNode!");
         slaveMap = new HashMap<Integer, SlaveData>();
@@ -37,6 +44,23 @@ public class MasterNode {
         this.middleWare = aMiddleWare;
     }
 */
+
+    /**
+     *
+     * @throws RemoteException
+     * @throws UnknownHostException
+     */
+    public void startService() throws RemoteException, UnknownHostException {       //new version
+//        ListenerService listener = new ListenerService(SDUtil.masterListenerPort);
+//        listener.start();
+        //sdLogger = new SDLogger(SDUtil.LOGPATH);
+        //sddfsIndex = new SDDFSIndex(sdLogger);
+       // sdMasterRMIService = new SDMasterRMIService(sddfsIndex);
+        registry = LocateRegistry.createRegistry(Macro.MASTER_RMIRegistry_PORT);
+        //registry = LocateRegistry.getRegistry("localhost", SDUtil.MASTER_RMIRegistry_PORT);
+      //  registry.rebind(SDMasterService.class.getCanonicalName(), sdMasterRMIService);
+
+    }
 
 
     public void startListen () throws IOException {
