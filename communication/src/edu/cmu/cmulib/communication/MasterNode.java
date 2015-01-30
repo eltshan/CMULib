@@ -2,56 +2,26 @@ package edu.cmu.cmulib.communication;
 
 import edu.cmu.cmulib.communication.Service.AlgorithmProtocol;
 
+import edu.cmu.cmulib.communication.Service.MasterAlgorithm;
 import edu.cmu.cmulib.communication.Service.MasterSVD;
-
-import javax.security.auth.callback.Callback;
-
 import java.net.*;
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.concurrent.ExecutorService;
+
 import java.io.*;
 
 import static java.rmi.registry.LocateRegistry.*;
 
 public class MasterNode {
-    HashMap<Integer, SlaveData> slaveMap;
-    int slaveId=1;
-    private int port = 8000;
-    private ExecutorService executorService;
-    private ServerSocket serverSocket;
-    private final int POOL_SIZE = 5;
-    public MiddleWare midd;
 
     ArrayList<SlaveInfo> slaveList;
 
-    //private SDMiddleWare middleWare;
-    private Callback middleWare;
-    // contructor
-
     private Registry registry;  // new version
 
-
-    public MasterNode(MiddleWare nmidd) throws IOException {
-        System.out.println("I'm a MasterNode!");
-//        slaveMap = new HashMap<Integer, SlaveData>();
-//        serverSocket = new ServerSocket(port);
-//        executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * POOL_SIZE);
-//        midd = nmidd;
+    public MasterNode(){
         slaveList = new ArrayList<SlaveInfo>();
     }
-
-/*
-    public MasterNode(Callback aMiddleWare) throws IOException {
-        System.out.println("I'm a MasterNode!");
-        slaveMap = new HashMap<Integer, SlaveData>();
-        serverSocket = new ServerSocket(port);
-        executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * POOL_SIZE);
-        this.middleWare = aMiddleWare;
-    }
-*/
 
     /**
      *
@@ -59,113 +29,13 @@ public class MasterNode {
      * @throws UnknownHostException
      */
     public void startService() throws RemoteException, UnknownHostException {       //new version
-//        ListenerService listener = new ListenerService(SDUtil.masterListenerPort);
-//        listener.start();
-        //sdLogger = new SDLogger(SDUtil.LOGPATH);
-        //sddfsIndex = new SDDFSIndex(sdLogger);
-       // sdMasterRMIService = new SDMasterRMIService(sddfsIndex);
-        AlgorithmProtocol masterSVD = new MasterSVD();
+
+        ArrayList<SlaveInfo> slaveInfoList = new ArrayList<SlaveInfo>();
+        slaveInfoList.add(new SlaveInfo(InetAddress.getLocalHost(), 16645));
+        MasterAlgorithm masterSVD = new MasterSVD(slaveInfoList);
         registry = createRegistry(Macro.MASTER_RMIRegistry_PORT);
-        //registry = LocateRegistry.getRegistry("localhost", SDUtil.MASTER_RMIRegistry_PORT);
-        registry.rebind( AlgorithmProtocol.class.getCanonicalName(), masterSVD);
+        registry.rebind( MasterAlgorithm.class.getCanonicalName(), masterSVD);
 
     }
 
-
-    public void startListen () throws IOException {
-        new Thread(new ServerService()).start();
-        System.out.println("why!!!!??????!");
-    }
-
-    public void sendObject(int id, CommonPacket packet){
-        SlaveData aSlaveData = slaveMap.get(id);
-        try {
-			aSlaveData.oos.writeObject(packet);
-		} catch (IOException e1) {
-			System.out.println("cannot write packet");
-			e1.printStackTrace();
-		}
-        
-        try {
-			aSlaveData.oos.flush();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
-
-    public int slaveNum(){
-        return slaveMap.size();
-    }
-
-    private class ServerService implements Runnable{
-        public void run(){
-            while(true){
-                Socket socket = null;
-                try {
-                    socket = serverSocket.accept();
-                    System.out.println("socket accepted");
-                    executorService.execute(new Slave(socket));
-                }catch (Exception e) {
-                    System.out.println(e);
-                }
-            }
-        }
-    }
-
-    private class Slave implements Runnable {
-        private Socket socket;
-        private ObjectOutputStream oos;
-        private ObjectInputStream ois;
-
-        public Slave(Socket socket){
-            this.socket = socket;
-            try {
-				oos = new ObjectOutputStream(socket.getOutputStream());
-			} catch (IOException e) {
-				System.out.println("fail to get object ouput stream");
-				e.printStackTrace();
-			}
-            try {            
-				ois = new ObjectInputStream(new BufferedInputStream(socket.getInputStream()));
-			} catch (IOException e) {
-				System.out.println("fail to get object input stream");
-				e.printStackTrace();
-			}
-            System.out.println("socket connected");
-        }
-
-        public void run() {
-            try {
-                handleSocket();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-        private void handleSocket() throws Exception {
-            String temp="";
-            SlaveData aSlave = new SlaveData(ois, oos);
-            aSlave.id = slaveId++;
-            synchronized(slaveMap){
-                slaveMap.put(aSlave.id,aSlave);
-            }
-            //System.out.println("Slaveid: " + slaveMap.size());
-            while(true){
-            	CommonPacket packet = (CommonPacket) ois.readObject();
-                midd.msgReceived(aSlave.id,packet );
-                 //  middleWare.salveReturn();
-                //System.out.println(temp);
-                if(temp.equals("eof")){
-                    System.out.println("it is eof");
-                    break;
-                }
-            }
-            oos.close();
-            ois.close();
-            socket.close();
-            System.out.println("HHHHHHHHHHHHHHHHHHH");
-        }
-
-    }
 }

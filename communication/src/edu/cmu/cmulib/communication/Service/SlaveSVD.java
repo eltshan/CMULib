@@ -6,12 +6,12 @@ import edu.cmu.cmulib.communication.Service.svd.Slave_SVD;
 import edu.cmu.cmulib.communication.Service.svd.Slave_getSplitedMatrix;
 
 import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
 /**
  * Created by kanghuang on 1/30/15.
  */
-public class SlaveSVD implements SlaveAlgorithm{
-
+public class SlaveSVD extends UnicastRemoteObject implements SlaveAlgorithm{
 
     Mat S, L;
     Slave_getSplitedMatrix split;
@@ -23,19 +23,17 @@ public class SlaveSVD implements SlaveAlgorithm{
         Mat score = new Mat(rows, cols ,test);
         split = new Slave_getSplitedMatrix(score);
         svd = new Slave_SVD();
+
     }
 
-    public boolean setL(Mat L){
+    public boolean setL(Mat L) throws RemoteException{
         svd.setL(L);
         return true;
     }
 
-    public void start(Tag tag){
+    public void start(Tag tag) throws RemoteException{
         svd.setTag(tag);
         new Thread(svd).start();
         System.out.println("processing...");
     }
-
-
-
 }

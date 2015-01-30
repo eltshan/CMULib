@@ -17,11 +17,11 @@ import java.util.ArrayList;
  * Created by kanghuang on 1/30/15.
  */
 public class MasterSVD extends UnicastRemoteObject implements MasterAlgorithm {
-    int slaveNum = 4;
+   int slaveNum;
     double[] test = {6,8,9,6,2,9,7,7,8,5,8,7,4,8,6,8,5,4,7,3,5,9,8,6,9,6,7,8,6,6,6,8};
     int rows = 8;
     int cols = 4;
-    Mat score = new Mat(rows, cols ,test);
+    Mat score;// = new Mat(rows, cols ,test);
     Tag tag;
     Mat Like, slaveL;
     Master_SVD svd;            //rmi masterSVD共用一个Master_SVD
@@ -29,30 +29,32 @@ public class MasterSVD extends UnicastRemoteObject implements MasterAlgorithm {
     ArrayList<SlaveInfo> slaveList;
     ArrayList<SlaveAlgorithm> algorithmList;
     public MasterSVD(ArrayList<SlaveInfo> slaveList) throws RemoteException {
+        super();
         this.slaveList = slaveList;
+        this.slaveNum = slaveList.size();
+
     }
 
-    public Mat submit(Mat score, int slaveNum) {
+    public void config(Mat score)throws RemoteException{
+        createAlgorithmList();
         this.score = score;
-        this.slaveNum = slaveNum;
         this.svd = new Master_SVD(score, slaveNum);
         split = new Master_Spliter(score, slaveNum);
         Like = svd.initL();
         for (int i = 0; i < slaveNum; i++) {
-            // SlaveAlgorithm SlaveSvd =
-            //  sendMat(Like,i,commu);
+            SlaveAlgorithm slaveAlgorithm = algorithmList.get(i);
+            slaveAlgorithm.setL(this.Like);
         }
-        return this.Like;
     }
 
-    public boolean updateL(Mat L){
+    public boolean updateL(Mat L)throws RemoteException{
         svd.update_SVD(L);
         return true;
     }
 
-    public void start(){
+    public void start() throws RemoteException{
         // compute the first eigenvector iterately
-        createAlgorithmList();
+
         do {
             int remain = slaveNum;
             svd.setL(Like);
