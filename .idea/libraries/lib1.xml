@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CoolMatrixUtility/lib/mtj-1.0.2-SNAPSHOT-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CoolMatrixUtility/lib/communication.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CoolMatrixUtility/lib/mtj-1.0.2-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
