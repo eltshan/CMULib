@@ -1,10 +1,8 @@
 package edu.cmu.cmulib.communication;
 
-import cmu.core.Mat;
 import edu.cmu.cmulib.communication.Service.MasterAlgorithm;
+import edu.cmu.cmulib.communication.cmu.core.Mat;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;

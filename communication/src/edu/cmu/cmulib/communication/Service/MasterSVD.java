@@ -1,12 +1,13 @@
 package edu.cmu.cmulib.communication.Service;
 
-import cmu.core.Mat;
-import cmu.core.MatOp;
 import edu.cmu.cmulib.communication.Service.svd.Master_SVD;
 import edu.cmu.cmulib.communication.Service.svd.Master_Spliter;
-import cmu.help.Tag;
+
 
 import edu.cmu.cmulib.communication.SlaveInfo;
+import edu.cmu.cmulib.communication.cmu.core.Mat;
+import edu.cmu.cmulib.communication.cmu.core.MatOp;
+import edu.cmu.cmulib.communication.cmu.help.Tag;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;

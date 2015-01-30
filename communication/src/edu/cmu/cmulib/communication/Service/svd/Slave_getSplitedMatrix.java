@@ -1,7 +1,7 @@
 package edu.cmu.cmulib.communication.Service.svd;
 
-import cmu.core.Mat;
-import cmu.help.Tag;
+import edu.cmu.cmulib.communication.cmu.core.Mat;
+import edu.cmu.cmulib.communication.cmu.help.Tag;
 
 /**
  * Slave_Spliter is used to reconstruct the sub matrix on slaves.. 

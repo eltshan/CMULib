@@ -1,11 +1,10 @@
 package edu.cmu.cmulib.communication.Service.svd;
 
-import cmu.core.Mat;
-import cmu.core.MatOp;
 
-import cmu.help.Tag;
 import edu.cmu.cmulib.communication.Service.MasterAlgorithm;
-import edu.cmu.cmulib.communication.Service.MasterSVD;
+import edu.cmu.cmulib.communication.cmu.core.Mat;
+import edu.cmu.cmulib.communication.cmu.core.MatOp;
+import edu.cmu.cmulib.communication.cmu.help.Tag;
 
 
 import java.rmi.NotBoundException;
@@ -13,7 +12,7 @@ import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 
 public class Slave_SVD implements Runnable {
-	 private Mat L;//src;          // original L and source Matrix 
+	 private Mat L;//src;          // original L and source Matrix
 	 private Tag index;
 	 private Mat score;
 	 private Registry registry;

@@ -1,10 +1,12 @@
 package edu.cmu.cmulib.communication.Service.svd;
 
 
+import edu.cmu.cmulib.communication.cmu.core.Mat;
+import edu.cmu.cmulib.communication.cmu.help.Tag;
+
 import java.util.ArrayList;
 
-import cmu.core.*;
-import cmu.help.Tag;
+
 
 /**
  * Master_Spliter is used to Split the whole Score Array into pieces. 

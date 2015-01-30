@@ -1,5 +1,6 @@
 package edu.cmu.cmulib.communication.Service;
-import cmu.core.Mat;
+
+import edu.cmu.cmulib.communication.cmu.core.Mat;
 
 import java.rmi.RemoteException;
 

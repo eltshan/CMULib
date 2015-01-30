@@ -1,7 +1,9 @@
 package edu.cmu.cmulib.communication.Service.svd;
 
-import cmu.core.Mat;
-import cmu.core.MatOp;
+
+import edu.cmu.cmulib.communication.cmu.core.Mat;
+import edu.cmu.cmulib.communication.cmu.core.MatOp;
+
 /**
  * 
  * @author team3

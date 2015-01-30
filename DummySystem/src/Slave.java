@@ -1,13 +1,15 @@
-import cmu.core.Mat;
+
 import edu.cmu.cmulib.communication.Service.svd.Slave_SVD;
 import edu.cmu.cmulib.communication.Service.svd.Slave_getSplitedMatrix;
-import cmu.help.Tag;
+
 
 import java.io.IOException;
 import java.net.InetAddress;
 import java.util.LinkedList;
 
 import edu.cmu.cmulib.communication.CommonPacket;
+import edu.cmu.cmulib.communication.cmu.core.Mat;
+import edu.cmu.cmulib.communication.cmu.help.Tag;
 
 public class Slave implements Runnable {
 	public int SlaveId;
