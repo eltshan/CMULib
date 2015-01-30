@@ -6,10 +6,12 @@ import java.rmi.server.UnicastRemoteObject;
 /**
  * Created by kanghuang on 1/29/15.
  */
-public class slaveAlgorithm extends UnicastRemoteObject implements algorithmProtocol {
+public class SlaveAlgorithm extends UnicastRemoteObject implements AlgorithmProtocol {
 
-    protected slaveAlgorithm() throws RemoteException {
+    protected SlaveAlgorithm() throws RemoteException {
 
     }
+
+
 
 }

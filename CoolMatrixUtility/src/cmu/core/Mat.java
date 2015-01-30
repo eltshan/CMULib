@@ -2,8 +2,10 @@ package cmu.core;
 
 import no.uib.cipr.matrix.DenseMatrix;
 
+import java.io.Serializable;
 
-public class Mat {
+
+public class Mat implements Serializable {
 	public int rows, cols; // the number of rows and columns
 	public double[] data; // matrix data
 	

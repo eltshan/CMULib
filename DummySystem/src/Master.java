@@ -4,6 +4,7 @@ import cmu.core.Mat;
 import cmu.core.MatOp;
 import cmu.decomp.svd.Master_SVD;
 import cmu.decomp.svd.Master_Spliter;
+import cmu.decomp.svd.Service.AlgorithmProtocol;
 import cmu.help.Tag;
 import java.io.IOException;
 
@@ -28,8 +29,6 @@ public class Master {
         MasterMiddleWare commu = new MasterMiddleWare();
         commu.register(Double[].class,mList);
         commu.startMaster();
-            
-            
         Master_Spliter split = new Master_Spliter(score, slaveNum);
         Master_SVD svd = new Master_SVD(score, slaveNum);
         while(commu.slaveNum()<slaveNum){System.out.println(commu.slaveNum());}

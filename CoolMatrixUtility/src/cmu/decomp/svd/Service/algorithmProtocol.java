@@ -7,6 +7,6 @@ import java.rmi.Remote;
 /**
  * Created by kanghuang on 1/29/15.
  */
-public interface algorithmProtocol extends Remote{
+public interface AlgorithmProtocol extends Remote{
     //public void evaluate();
 }

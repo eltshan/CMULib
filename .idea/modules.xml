@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/CoolMatrixUtility/CoolMatrixUtility.iml" filepath="$PROJECT_DIR$/CoolMatrixUtility/CoolMatrixUtility.iml" />
       <module fileurl="file://$PROJECT_DIR$/DummySystem/DummySystem.iml" filepath="$PROJECT_DIR$/DummySystem/DummySystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/communication/communication.iml" filepath="$PROJECT_DIR$/communication/communication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
     </modules>
   </component>
 </project>

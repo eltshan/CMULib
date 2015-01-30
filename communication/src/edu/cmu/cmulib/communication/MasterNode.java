@@ -1,5 +1,9 @@
 package edu.cmu.cmulib.communication;
 
+import cmu.decomp.svd.Service.AlgorithmProtocol;
+
+import cmu.decomp.svd.Service.MasterSVD;
+
 import javax.security.auth.callback.Callback;
 
 import java.net.*;
@@ -11,6 +15,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.io.*;
 
+import static java.rmi.registry.LocateRegistry.*;
+
 public class MasterNode {
     HashMap<Integer, SlaveData> slaveMap;
     int slaveId=1;
@@ -19,6 +25,7 @@ public class MasterNode {
     private ServerSocket serverSocket;
     private final int POOL_SIZE = 5;
     public MiddleWare midd;
+
 
     //private SDMiddleWare middleWare;
     private Callback middleWare;
@@ -56,9 +63,10 @@ public class MasterNode {
         //sdLogger = new SDLogger(SDUtil.LOGPATH);
         //sddfsIndex = new SDDFSIndex(sdLogger);
        // sdMasterRMIService = new SDMasterRMIService(sddfsIndex);
-        registry = LocateRegistry.createRegistry(Macro.MASTER_RMIRegistry_PORT);
+        AlgorithmProtocol masterSVD = new MasterSVD();
+        registry = createRegistry(Macro.MASTER_RMIRegistry_PORT);
         //registry = LocateRegistry.getRegistry("localhost", SDUtil.MASTER_RMIRegistry_PORT);
-      //  registry.rebind(SDMasterService.class.getCanonicalName(), sdMasterRMIService);
+        registry.rebind( AlgorithmProtocol.class.getCanonicalName(), masterSVD);
 
     }
 

@@ -11,15 +11,26 @@ import java.util.LinkedList;
 
 import edu.cmu.cmulib.communication.CommonPacket;
 
-public class Slave {
+public class Slave implements Runnable {
 	public int SlaveId;
 	public double workspan = Double.MAX_VALUE;
-	
+	Mat score, S, L;
+	LinkedList<Double[]> mList;
+	LinkedList<Tag> tagList;
+	Slave_getSplitedMatrix split;
 	public Slave (int SlaveId, double workspan) {
 		this.SlaveId = SlaveId;	
 		this.workspan = workspan;
 	}
-	
+
+	public Slave(){
+		double[] test = {6,8,9,6,2,9,7,7,8,5,8,7,4,8,6,8,5,4,7,3,5,9,8,6,9,6,7,8,6,6,6,8};
+		int rows = 8;
+		int cols = 4;
+		mList = new LinkedList<Double[]>();
+		tagList = new LinkedList<Tag>();
+	}
+
 	public static void printArray(double[] arr){
 		for(double i: arr)
 			System.out.print(i+" ");
@@ -130,5 +141,13 @@ public class Slave {
         m.sendPacket(packet);
 		
 	}
-	
+
+	@Override
+	public void run() {
+		split.setTag(tagList.peek());
+		tagList.remove();
+		S = split.construct();
+		L = svd.Slave_UpdateL(S);
+		printArray(L.data);
+	}
 }
