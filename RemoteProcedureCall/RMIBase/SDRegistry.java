@@ -4,9 +4,7 @@ import ArcherException.SDDuplicateService;
 import ArcherException.SDServiceNotExist;
 import RMI.Client.SDRemoteObjectReference;
 
-/**
- * Created by amaliujia on 14-12-22.
- */
+
 public interface SDRegistry extends SDRemote {
 
     //look up a service in server
