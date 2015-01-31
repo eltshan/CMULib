@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="mtj-1.0.2-SNAPSHOT-jar-with-dependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mtj-1.0.2-SNAPSHOT-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="jar://$PROJECT_DIR$/mtj-1.0.2-SNAPSHOT-jar-with-dependencies.jar!/" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
