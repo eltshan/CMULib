@@ -9,7 +9,7 @@ public class SlaveNode {
     private ObjectOutputStream oos;
     ObjectInputStream ois = null;
     MiddleWare midd =null;
-
+    
     private String masterAddress;
     private int masterPort;
 
