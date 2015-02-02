@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotNull;
 import java.io.IOException;
 import java.net.Socket;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,8 +18,6 @@ import edu.cmu.cmulib.communication.SlaveNode;
 /**
  * Write detailed test cases for MasterNode and SlaveNode classes.
  * @author Jing Li
- * @param <MasterNode>
- *
  */
 public class NodeTest {
 	
@@ -61,4 +60,11 @@ public class NodeTest {
 		sNode2.disconnect();
 		sNode2.send(packet);
 	}
+	
+	@After
+	public void cleanUp(){
+		
+	}
+	
+	
 }

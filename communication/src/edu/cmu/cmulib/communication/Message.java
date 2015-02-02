@@ -19,8 +19,8 @@ public class Message {
         }
     }
 
-    public static String buildParameter(double parameter){
-        String parameterString = String.valueOf(parameter);
+    public static String buildParameter(double[][] matrixDouble2){
+        String parameterString = String.valueOf(matrixDouble2);
         int opCode;
         opCode = Macro.transferParameter;
         return opCode + "\t" + parameterString;

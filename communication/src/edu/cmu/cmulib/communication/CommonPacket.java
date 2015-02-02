@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class CommonPacket implements Serializable {
 	/**
-	 * 
+	 * Parameters
 	 */
     private static final long serialVersionUID = 4L;
     int slaveId;
