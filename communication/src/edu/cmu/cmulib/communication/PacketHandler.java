@@ -6,7 +6,7 @@ public class PacketHandler {
 	@SuppressWarnings("rawtypes")
 	HashMap<Class<?>, Queue> map = new HashMap<Class<?>,Queue>();
 	
-	public void register(Class<?> clazz, Queue list){
+	public void register(Class<?> clazz, Queue<?> list){
 		map.put(clazz, list);
     }
 	@SuppressWarnings("unchecked")

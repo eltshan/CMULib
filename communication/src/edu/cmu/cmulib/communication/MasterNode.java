@@ -18,6 +18,7 @@ public class MasterNode {
     public MiddleWare midd;
 
     //private SDMiddleWare middleWare;
+    
     private Callback middleWare;
     // contructor 
     public MasterNode(MiddleWare nmidd) throws IOException {
