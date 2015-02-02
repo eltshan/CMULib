@@ -1,9 +1,7 @@
-package RMI.RMIBase;
+package RMIBase;
 
-import ArcherException.SDDuplicateService;
-import ArcherException.SDServiceNotExist;
-import RMI.Client.SDRemoteObjectReference;
-
+import RMIException.SDDuplicateService;
+import RMIException.SDServiceNotExist;
 
 public interface SDRegistry extends SDRemote {
 

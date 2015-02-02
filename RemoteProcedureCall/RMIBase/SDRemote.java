@@ -1,4 +1,4 @@
-package RMI.RMIBase;
+package RMIBase;
 
 public interface SDRemote {
 }

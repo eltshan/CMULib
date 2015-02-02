@@ -1,9 +1,9 @@
-package RMI.Server;
+package RMIServer;
 
-import ArcherException.SDDuplicateService;
-import ArcherException.SDServiceNotExist;
-import RMI.Client.SDRemoteObjectReference;
-import RMI.RMIBase.SDRegistry;
+import RMIBase.SDRegistry;
+import RMIBase.SDRemoteObjectReference;
+import RMIException.SDDuplicateService;
+import RMIException.SDServiceNotExist;
 
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
