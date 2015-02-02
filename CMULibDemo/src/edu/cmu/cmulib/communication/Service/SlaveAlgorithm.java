@@ -13,7 +13,7 @@ import java.rmi.RemoteException;
 public interface SlaveAlgorithm extends AlgorithmProtocol {
 
 
-    public boolean setL(Mat L) throws RemoteException;
+    public boolean setL(Double[] L) throws RemoteException;
 
     public void start(Tag tag) throws RemoteException;
 

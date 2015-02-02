@@ -20,13 +20,17 @@ public class Client {
         try {
             Registry registry = LocateRegistry.getRegistry("localhost", Macro.MASTER_RMIRegistry_PORT);
             MasterAlgorithm SVD = (MasterAlgorithm)registry.lookup(MasterAlgorithm.class.getCanonicalName());
-            SVD.config(score);
+            SVD.config();
             SVD.start();
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (NotBoundException e) {
             e.printStackTrace();
         }
-
+    }
+    public static void printArray(double[] arr){
+        for(double i: arr)
+            System.out.print(i+" ");
+        System.out.println();
     }
 }

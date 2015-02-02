@@ -18,7 +18,15 @@ public class helper {
         return mat;
     }
 
-    public static Mat getExpandL(Mat temp){
+    public static Double[] getExpandL(Mat mat){
+
+            Double [] array = new Double[mat.data.length+2];
+            array[0] = Double.valueOf(mat.rows);
+            array[1] = Double.valueOf(mat.cols);
+
+            for(int k=0; k<mat.data.length;k++)
+                array[k+2] = Double.valueOf(mat.data[k]);
+           return array;
 
     }
 

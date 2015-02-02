@@ -1,6 +1,5 @@
 package edu.cmu.cmulib.communication.Service;
 
-import edu.cmu.cmulib.communication.cmu.core.Mat;
 
 import java.rmi.RemoteException;
 
@@ -10,7 +9,7 @@ import java.rmi.RemoteException;
  */
 public interface MasterAlgorithm extends AlgorithmProtocol {
 
-    public boolean updateL(Mat L) throws RemoteException;
+    public boolean updateL(Double[] L, String id) throws RemoteException;
     public void start() throws RemoteException;
-    public void config(Mat score) throws RemoteException;
+    public void config() throws RemoteException;
 }

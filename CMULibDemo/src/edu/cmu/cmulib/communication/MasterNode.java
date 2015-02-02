@@ -31,7 +31,7 @@ public class MasterNode {
     public void startService() throws RemoteException, UnknownHostException {       //new version
 
         ArrayList<SlaveInfo> slaveInfoList = new ArrayList<SlaveInfo>();
-        slaveInfoList.add(new SlaveInfo(InetAddress.getLocalHost(), 16645));
+        slaveInfoList.add(new SlaveInfo("localhost", 16645));
         MasterAlgorithm masterSVD = new MasterSVD(slaveInfoList);
         registry = createRegistry(Macro.MASTER_RMIRegistry_PORT);
         registry.rebind( MasterAlgorithm.class.getCanonicalName(), masterSVD);

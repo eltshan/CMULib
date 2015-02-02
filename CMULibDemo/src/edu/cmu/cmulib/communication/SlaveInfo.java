@@ -6,7 +6,7 @@ import java.net.InetAddress;
  * Created by kanghuang on 1/30/15.
  */
 public class SlaveInfo {
-    private InetAddress address;
+    private String address;
     private int port;
     private int slaveID;
     /**
@@ -16,7 +16,7 @@ public class SlaveInfo {
      * @param address slave IP adress
      * @param port    slave socket port
      */
-    public SlaveInfo(int id, InetAddress address, int port) {
+    public SlaveInfo(int id, String address, int port) {
         this.slaveID = id;
         this.address = address;
         this.port = port;
@@ -28,13 +28,13 @@ public class SlaveInfo {
      * @param address slave identifier
      * @param port    slave socket port
      */
-    public SlaveInfo(InetAddress address, int port) {
+    public SlaveInfo(String address, int port) {
         this.address = address;
         this.port = port;
     }
 
     public String getAddress() {
-        return this.address.getHostAddress();
+        return this.address;
     }
 
     public String getPortString() {
