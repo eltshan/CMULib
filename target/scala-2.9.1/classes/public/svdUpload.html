@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>SVD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://bootstraptaste.com" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" media="all" href="styles.css" />
+<link href="skins/default.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><h1><span>CMU</span>LIB</h1></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active" class="dropdown">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Algorithms <b class=" icon-angle-down"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="upload.html">SVD</a></li>
+                                <li><a href="components.html">RandomForest</a></li>
+								<li><a href="pricingbox.html">LazyLearning</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/CMULib/CMULib">Sources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>	
+	</header>
+
+<div class="container">
+	<div class="row clearfix">
+			<div class="jumbotron">
+				<h1>
+					What is SVD?
+				</h1>
+				<p>
+					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="http://en.wikipedia.org/wiki/Singular_value_decomposition">Learn more</a>
+				</p>
+			</div>
+	</div>
+</div>
+
+<div class="container">
+<form id="upload" action="upload.php" method="POST" enctype="multipart/form-data">
+
+<fieldset>
+<legend>HTML File Upload</legend>
+
+<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+<div>
+	<label for="fileselect">Files to upload:</label>
+	<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+	<div id="filedrag">or drop files here</div>
+</div>
+
+<div id="submitbutton">
+	<button type="submit">Upload Files</button>
+</div>
+
+</fieldset>
+
+</form>
+
+<div id="progress"></div>
+
+<div id="messages">
+<p>Status Messages</p>
+</div>
+</div>
+<script src="filedrag.js"></script>
+</body>
+</html>
