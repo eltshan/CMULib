@@ -11,6 +11,28 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
 public class SlaveNode {
+<<<<<<< HEAD
+=======
+    String mName = "";
+    Socket socket = null;
+    private ObjectOutputStream oos;
+    ObjectInputStream ois = null;
+    MiddleWare midd =null;
+    
+    private String masterAddress;
+    private int masterPort;
+
+    public SlaveNode(String nn) {
+        mName = nn;
+        System.out.println("I'm a SlaveNode - " + mName);
+    }
+
+    public SlaveNode(String masterAddress, int masterPort, MiddleWare myMidd){
+        this.masterAddress = masterAddress;
+        this.masterPort = masterPort;
+        this.midd = myMidd;
+    }
+>>>>>>> master
 
     private Registry registry;
 

@@ -13,7 +13,21 @@ import java.io.*;
 
 import static java.rmi.registry.LocateRegistry.*;
 
+<<<<<<< HEAD
 public class MasterNode {
+=======
+    //private SDMiddleWare middleWare;
+    
+    private Callback middleWare;
+    // contructor 
+    public MasterNode(MiddleWare nmidd) throws IOException {
+        System.out.println("I'm a MasterNode!");
+        slaveMap = new HashMap<Integer, SlaveData>();
+        serverSocket = new ServerSocket(port);
+        executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * POOL_SIZE);
+        midd = nmidd;
+    }
+>>>>>>> master
 
     ArrayList<SlaveInfo> slaveList;
 

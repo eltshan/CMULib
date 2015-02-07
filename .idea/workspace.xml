@@ -2,27 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b65a770-c4ef-47a7-b1e7-610c4da607b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/cmu/help/helper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Client.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/MasterAlgorithm.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/MasterAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/MasterNode.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/MasterNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/MasterSVD.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/MasterSVD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/svd/Master_SVD.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/svd/Master_SVD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/SlaveAlgorithm.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/SlaveAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/SlaveInfo.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/SlaveInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/SlaveSVD.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/SlaveSVD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/svd/Slave_SVD.class" afterPath="$PROJECT_DIR$/CMULibDemo/out/production/CMULibDemo/edu/cmu/cmulib/communication/Service/svd/Slave_SVD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Client.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/MasterAlgorithm.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/MasterAlgorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/MasterNode.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/MasterNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/MasterSVD.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/MasterSVD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/svd/Master_SVD.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/svd/Master_SVD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/SlaveAlgorithm.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/SlaveAlgorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/SlaveInfo.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/SlaveInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/SlaveSVD.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/SlaveSVD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/svd/Slave_SVD.java" afterPath="$PROJECT_DIR$/CMULibDemo/src/edu/cmu/cmulib/communication/Service/svd/Slave_SVD.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Clustering/BipartiteClustering.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Index/Cluster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Index/ClusteringIndex.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Index/ClusteringInvList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Index/ClusteringMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Index/ClusteringPosting.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Index/ClusteringVectorType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/communication/test/edu/cmu/cmulib/commu/CommonPacketTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Clustering/DocumentToCluster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/communication/test/edu/cmu/cmulib/commu/MessageTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/communication/test/edu/cmu/cmulib/commu/NodeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Clustering/ObjectToCluster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIException/SDClientDriverArgumentsWrong.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIException/SDConnectionException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIException/SDDuplicateService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIException/SDMarshallingException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIServer/SDRegistryImp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIBase/SDRemoteConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIBase/SDRemoteObjectReference.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIException/SDRemoteReferenceObjectException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIException/SDServiceNotExist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIException/SDUnmarshallingException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clustering/src/Clustering/WordToCluster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UIWebsite/fade.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UIWebsite/test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communication/.classpath" afterPath="$PROJECT_DIR$/communication/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULib.iml" afterPath="$PROJECT_DIR$/CMULib.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/CommonPacket.java" afterPath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/CommonPacket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/MasterNode.java" afterPath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/MasterNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Message.java" afterPath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Message.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/PacketHandler.java" afterPath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/PacketHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RemoteProcedureCall/RMIBase/SDRegistry.java" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIBase/SDRegistry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RemoteProcedureCall/RMIBase/SDRemote.java" afterPath="$PROJECT_DIR$/RemoteProcedureCall/RMIBase/SDRemote.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/SlaveNode.java" afterPath="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/SlaveNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communication/communication.iml" afterPath="$PROJECT_DIR$/communication/communication.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMULibDemo/.idea/workspace.xml" afterPath="$PROJECT_DIR$/CMULibDemo/.idea/workspace.xml" />
     </list>
     <ignored path="CMULib.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,41 +63,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MasterSVD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/MasterSVD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="834" max-vertical-offset="1590">
-              <caret line="76" column="15" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SlaveSVD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/SlaveSVD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MasterMiddleWare.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DummySystem/src/MasterMiddleWare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="1845">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="1845">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Master.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Master.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DummySystem/src/Master.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5732758" vertical-offset="330" max-vertical-offset="1575">
-              <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1575">
+              <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BipartiteClustering.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Clustering/src/Clustering/BipartiteClustering.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36886394" vertical-offset="5737" max-vertical-offset="8550">
+              <caret line="403" column="0" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectToCluster.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clustering/src/Clustering/ObjectToCluster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+              <folding>
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClusteringMatrix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clustering/src/Index/ClusteringMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="3300">
+              <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -90,34 +119,9 @@
       <file leaf-file-name="SlaveMiddleWare.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DummySystem/src/SlaveMiddleWare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1710">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1710">
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Slave_SVD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Slave_SVD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1215">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="60" />
-              <folding>
-                <element signature="e#1189#1190#0" expanded="false" />
-                <element signature="e#1208#1209#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Master_SVD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Master_SVD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="1305">
-              <caret line="64" column="64" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -125,24 +129,9 @@
       <file leaf-file-name="Slave.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DummySystem/src/Slave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235">
-              <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2235">
+              <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Slave_getSplitedMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Slave_getSplitedMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1080">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="e#697#698#0" expanded="false" />
-                <element signature="e#721#722#0" expanded="false" />
-                <element signature="e#820#821#0" expanded="false" />
-                <element signature="e#841#842#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -150,8 +139,8 @@
       <file leaf-file-name="MasterNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/MasterNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="705">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="720">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -165,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/slave_Service/slaveSVD.java" />
         <option value="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/slave_Service/SVD.java" />
         <option value="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/slaveService/slaveSVD.java" />
         <option value="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/slaveService/SVD.java" />
@@ -214,14 +202,16 @@
         <option value="$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Client.java" />
         <option value="$PROJECT_DIR$/DummySystem/src/Master.java" />
         <option value="$PROJECT_DIR$/DummySystem/src/Slave.java" />
+        <option value="$PROJECT_DIR$/Clustering/src/Index/ClusteringMatrix.java" />
+        <option value="$PROJECT_DIR$/Clustering/src/Clustering/ObjectToCluster.java" />
+        <option value="$PROJECT_DIR$/Clustering/src/Clustering/BipartiteClustering.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
-    <option name="y" value="31" />
-    <option name="width" value="1400" />
-    <option name="height" value="793" />
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -246,6 +236,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,10 +320,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMULib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMULib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMULibDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMULib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMULib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Clustering" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMULib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMULib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Clustering" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Clustering" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,6 +475,19 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -453,19 +514,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -547,7 +595,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="31" width="1400" height="793" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="823" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -565,15 +613,15 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3014286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3013889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -601,14 +649,139 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Slave_SVD.java">
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/MasterMiddleWare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1215">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="60" />
-          <folding>
-            <element signature="e#1189#1190#0" expanded="false" />
-            <element signature="e#1208#1209#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="1845">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/Master.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1575">
+          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clustering/src/Clustering/BipartiteClustering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7380">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/SlaveMiddleWare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1710">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/Slave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2235">
+          <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/MasterNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="720">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/MasterMiddleWare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="1845">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/Master.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2064" max-vertical-offset="2790">
+          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clustering/src/Clustering/BipartiteClustering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7380">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/SlaveMiddleWare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1710">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/Slave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="1935">
+          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/MasterNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2055">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/MasterMiddleWare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="1845">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/Master.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2790">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/SlaveMiddleWare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1710">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummySystem/src/Slave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="1935">
+          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/MasterNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2055">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -620,41 +793,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Master_SVD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Slave_getSplitedMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1080">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#697#698#0" expanded="false" />
-            <element signature="e#721#722#0" expanded="false" />
-            <element signature="e#820#821#0" expanded="false" />
-            <element signature="e#841#842#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DummySystem/src/Slave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1689" max-vertical-offset="2385">
           <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/CMULibMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="390">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -664,49 +806,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="705">
           <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Master_Spliter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="e#1325#1326#0" expanded="false" />
-            <element signature="e#1349#1350#0" expanded="false" />
-            <element signature="e#1386#1387#0" expanded="false" />
-            <element signature="e#1410#1411#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/SlaveAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="300">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/MasterAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Master_SVD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1260">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1755">
           <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,13 +837,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1710">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/masterService/heartBeat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="240">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -784,13 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/masterService/heartBeat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/CommonPacket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
@@ -798,45 +882,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/SlaveInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/cmu/help/Tag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/SlaveData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/cmu/core/MatTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="1920">
-          <caret line="119" column="6" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/cmu/core/MatOperationsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/AlgorithmProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -873,17 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/cmu/core/Mat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="4260">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,140 +932,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/SlaveAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/MasterAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Master_Spliter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="e#1325#1326#0" expanded="false" />
-            <element signature="e#1349#1350#0" expanded="false" />
-            <element signature="e#1386#1387#0" expanded="false" />
-            <element signature="e#1410#1411#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/CMULibMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/MasterNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="705">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/MasterSVD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="1590">
-          <caret line="76" column="15" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Slave_SVD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1215">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="60" />
-          <folding>
-            <element signature="e#1189#1190#0" expanded="false" />
-            <element signature="e#1208#1209#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Slave_getSplitedMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1080">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#697#698#0" expanded="false" />
-            <element signature="e#721#722#0" expanded="false" />
-            <element signature="e#820#821#0" expanded="false" />
-            <element signature="e#841#842#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/svd/Master_SVD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="1305">
-          <caret line="64" column="64" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/communication/src/edu/cmu/cmulib/communication/Service/SlaveSVD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="915">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DummySystem/src/MasterMiddleWare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1845">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="1845">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DummySystem/src/SlaveMiddleWare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1710">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DummySystem/src/Slave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235">
-          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="2385">
+          <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DummySystem/src/Master.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5732758" vertical-offset="330" max-vertical-offset="1575">
-          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1539" max-vertical-offset="1710">
+          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clustering/src/Index/ClusteringMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="3300">
+          <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clustering/src/Clustering/ObjectToCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clustering/src/Clustering/BipartiteClustering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36886394" vertical-offset="5737" max-vertical-offset="8550">
+          <caret line="403" column="0" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1084,7 +1051,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CoolMatrixUtility</last-edited>
+          <last-edited>CMULib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
